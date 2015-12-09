@@ -12,5 +12,5 @@ def num_literals(string):
 def len_encode(string):
 	return 2 + string.count('"') + string.count("\\")
 
-print sum([num_literals(i) for i in strings]) - sum([num_string_total(i) for i in strings])
-print sum([len_encode(i) for i in strings])
+print "Part 1: " + str(sum([num_literals(i) for i in strings]) - sum([num_string_total(i) for i in strings]))
+print "Part 2: " + str(sum([len_encode(i) for i in strings]))

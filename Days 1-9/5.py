@@ -26,13 +26,3 @@ def is_good(child):
 			return False
 	return True
 print [is_good(i) for i in children].count(True)
-# with open("5-output.html","w+") as f:
-# 	f.write("""<html><head></head><body>""")
-# 	for child in children:
-# 		f.write("<p>")
-# 		if is_good(child):
-# 			f.write("""<font color="green">+</font>""")
-# 		else:
-# 			f.write("""<font color="red">+</font>""")
-# 		f.write(child + "</p>")
-# 	f.write("""</body></html>""")

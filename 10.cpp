@@ -24,8 +24,9 @@ string processString(string input){
 void day10(string puzzleInput, int iterations){
 	clock_t begin = clock();
 	string input = "1113122113";
-	for(int i = 0; i < iterations; i++){
+	for(int i = 0; i < 10000; i++) {//iterations; i++){
 		input = processString(input);
+		cout << i << endl;
 	}
 	cout << to_string(iterations) + " iterations: ";
 	cout << to_string(input.length()) << endl;

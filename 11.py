@@ -31,7 +31,9 @@ def nextPassword(string):
 	string = string[:-1] + unichr(ord(string[-1]) + 1)
 	return string
 
-puzzle_input = nextPassword('hepxxyzz')
+puzzle_input = 'hepxxyzz'
+print "Starting at \"" + puzzle_input + "\""
+puzzle_input = nextPassword(puzzle_input)
 while not isPassword(puzzle_input):
 	puzzle_input = nextPassword(puzzle_input)
-print puzzle_input
+print "Next password is \"" + puzzle_input + "\""

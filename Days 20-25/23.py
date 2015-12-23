@@ -7,12 +7,11 @@ with open('23.txt','r') as f:
 
 registers = {'a':0,'b':0}
 def do_step(num):
-	print registers,
 	if num >= len(instructions):
 		return
 	step = instructions[num].split(' ')
 	opcode = step[0]
-	print step
+	print registers, step
 	if opcode == 'hlf':
 		registers[step[1]] /= 2
 		do_step(num+1)

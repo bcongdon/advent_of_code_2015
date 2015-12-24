@@ -18,14 +18,14 @@ def find_smallest_group(num_groups):
 				found_groups.append(combo)
 		if len(found_groups) > 0:
 			min_QE = 2**100
-			min_QE_index = 0
 			for i in range(len(found_groups)):
 				QE = reduce(mul, found_groups[i], 1)
 				if QE < min_QE:
 					min_QE = QE
-					min_QE_index = i
 			print "The minimum Quantum Entanglement of " + str(num_groups) + " groups is " + str(min_QE)
 			return 
-
+#Part 1
 find_smallest_group(3)
+
+#Part2
 find_smallest_group(4)
